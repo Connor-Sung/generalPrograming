@@ -45,3 +45,34 @@ let percentage = prediction / actual;
 console.log(percentage);
 let percentError = 1 -percentage;
 console.log(percentError);
+
+/* Starts a muiltline, or block, comment */
+/*
+wgahaeehanhetnr
+wrhqewgnrweyten
+aeaegnsgrykeywtwt
+
+weq3q3tjtergsnsfethqym
+/*
+
+/* Mathmatical operators in Javascript
++ -> Addition
+- -> Subtraction
+* -> Mulitplication
+/ -> Division
+** -> exponentiation (3**2 = 9)
+% -> modulus (reminder of division) (example = 23 / 10 = 2 R 3) (ans = 3) 
+Javascript will work like a scientific calculator, and apply
+order of operations (modulus happens with mulipilcation and division)
+
+Unlike any other programming languages, JavaScript only has 1 number type (Whihc is numbers)
+Other lanaguages frequently have atleast 2 number types, most commonly
+int - integers
+float - floating point numbers
+
+
+The are some rules for variable names in JavaScript:
+1. The name may contain only letters, digits, or symbols "$" and '_'
+2. The first character may NOT be a digit
+3. They canot be "reserved" Words. (you can't name a variable 'let', 'const', 'console.log')
+*/
