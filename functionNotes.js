@@ -58,3 +58,34 @@ function greetings(name = "Connor Sung"){
 (greetings("Mr. Keating"));
 (greetings("Stevie T."));
 (greetings());
+
+
+// Anonymous functions. Anonymous functions are frequenntly sed if a function
+// Expects to take another function as a parameter. Basically, all this meas is that
+// The function doesn't have a function name.
+
+(function (){
+    alert("This is an anonymous function");
+});
+
+// An actual example of how ou could use an anonymous function
+
+// function logkey(event) {
+//     console.log(`You pressed the "${event.key}`)
+// }
+
+// this.addEventListener("keydown", logkey)
+
+//^^^^^ How we would normally achieve this goal. But we can use an anonymous
+// function instead.
+
+
+// this.addEventListener("Keydown", function(event){
+//     console.log(`You pressed ${event.key}`);
+// });
+
+// Another way to create anonymous function
+
+this.addEventListener("keydown", (event) => {
+    console.log(`You pressed ${event.key}`);
+});
