@@ -117,8 +117,10 @@
 // sends back to the global scope. Some functins don't HAVE a return value.
 
 function randomLessThan(num) {
-    let x = (Math.random() * num);
-    return x;
+    console.log((Math.floorMath.random() * num));
 }
 
-console.log(console.log(randomLessThan(4)));
+randomLessThan(4);
+
+// Produce a number between 1-4
+console.log(randomLessThan(4) + 1)
