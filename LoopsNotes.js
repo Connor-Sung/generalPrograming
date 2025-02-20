@@ -205,6 +205,39 @@ for (let i = 0; i < fruits.length; i++){
 
 // There is a diffent kind of wat ro do this, using a for... of loop:
 
-for (let fruit of fruits){
-    console.log(fruit);
-}
+// for (let fruit of fruits){
+//     console.log(fruit);
+// }
+
+/* Something ti bite about arrays:
+array.length is returning the value of the last index + 1, 
+it is not actually counting the number of values in the array */
+
+let grades = ["A", "A", "B", , "B", "A"];
+console.log(grades);
+console.log(grades.length)
+
+// let badArray = [];
+// badArray[314] = "pie";
+// console.log(badArray.length)
+// console.log(badArray)
+
+/* Multidimensional Arrays
+A multidiemnsional array, is an array that is, in turn,
+made up of more arrays.
+*/
+
+// An example of holding XY coordinates of 5 points: (3,4) (1,2) (9,15) (37, 11) (215,1)
+let coordinates = [
+    [3,4],
+    [1,2],
+    [9, 15],
+    [37, 11],
+    [215, 1]
+]
+
+console.log(coordinates[4][0]);
+
+coordinates[4][0] = 21;
+
+console.log(coordinates);
