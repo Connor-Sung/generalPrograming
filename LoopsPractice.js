@@ -24,18 +24,21 @@
 
 // 4 
 
-// let sum2 = 0;
-// while(true){
-//     let value = +prompt("Enter a number", '');
-
-//     if(!value){
-//         break;
-//     }
-//     sum2 += value;
-// }
-// console.log(`sum = ` + sum2);
+let sum2 = 0;
+while(true){
+    let value = Number(+prompt("Enter a number", ''));
+    if (value == 0){
+        continue;    
+    }
+    if(!value){
+        break;
+    }
+    sum2 += value;
+}
+console.log(`sum = ` + sum2);
 
 // 5
 
-let Musics = ["Jazz", "Blues"]
-Musics.unshift()
+// let Musics = ["Jazz", "Blues"]
+// Musics.push("Rock-n-Roll" )
+// Musics.unshift()

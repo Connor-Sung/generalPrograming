@@ -87,7 +87,7 @@ for(let i = 0; i < 3;){
 
 let i = 0
 
-fore(; i < 3 ;){
+for (; i < 3 ;){
     console.log(i);
     i++
 }
@@ -117,7 +117,7 @@ You can put breaks in as failsafes if you think you might create an infinite loo
 
 //     sum += value
 // }
-// console.log(`sun = ` + sum);
+// console.log(`sum = ` + sum);
 
 // Example 2: add numbers from 1 to a given value WITH a timeout function
 // let sum = 0;
