@@ -241,3 +241,80 @@ console.log(coordinates[4][0]);
 coordinates[4][0] = 21;
 
 console.log(coordinates);
+
+/* Methods are functions tied to a dataType.
+
+e.g. arr.pop() is the method, which removes the last item of the array
+
+- We've learned 4 arrays methods: pop, push, shift, and unshift
+- arr.length is not technically a method, since it doesn't carry the ()
+- arr.at() which works like the [] notation, but allows you to use negative indices
+ex: arr =[a, b, c, d, e, f, g] => arr.at(-2) => "f"
+
+NEW METHODS:
+.join() => allows you to comine he terms of an array into a string,
+and you can specift the separator */
+
+// Example:
+let arrayForString = ["A","B","C","D","E","F","G"];
+console.log(arrayForString.join()); // This outputs a single string connected by commas;
+
+console.log(arrayForString.join("o_O")); // This outputs: "A o_O B o_O C o_O D o_O ..."
+
+/* more methods:
+.concat() => concatenate, combine arrays
+*/
+
+// Mike Brady marries Carol Martin,
+let mikesSons = ["Greg","Peter","Bobby"];
+let carolsDaughters = ["Marcia","Jan","Cindy"];
+let bradyBunch = mikesSons.concat(carolsDaughters);
+console.log(bradyBunch);
+
+/* Final 2 methods for now:
+-.splice(0) and .slice()
+
+.splice() adds new items to an array
+.slice() removes a pice of an array
+*/
+
+// Example: splice()
+let fruits = ["Apple","Orange","Banana","Kiwi"];
+fruits.splice(2,0, "Mango", "Papaya");
+console.log(fruits);
+//.splice(targetIndex, HowManyItemsRemovedAfterInserted, stuffToBeAdded...)
+
+// you can actually use splice to delete items from the middle of an array.
+fruits.splice(3,1,);
+console.log(fruits)
+
+// .slice() returns a new array from a subsection (or slice) of an original array.
+let fruitsIlike = fruits.slice(1,5);
+console.log(fruitsIlike);
+// .slice(indexToStart, indexToEndButNotUse)
+
+/* Strings actually behave a lot like arrays, and have some simliar methods:
+strings.length => length of string
+*/
+
+let alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+console.log(alpha.charAt(2));
+console.log(alpha.at(7)); // .at allows negaive indices, while charAt does not.
+console.log(alpha[12]);
+
+/*
+at() - allows negative indices
+IF you put in a value that doesn't exist
+alpha[28] => Undefined
+alapha.charAt => " "
+ALSO: observe this example:
+*/
+alpha[1] = "Q";
+console.log(alpha); // [] are "read-only".
+
+/* 3 methods to remove part of a string
+.slice(start, end)
+.substring(start, end) // values less than 0 are treated as 0
+^ For both of these, if you omit the end value, it goes to the end of the string ^
+.substr(start, length) */
